@@ -84,10 +84,10 @@ subtractButton.addEventListener('click', () => {
 });
 
 const handleValueChange = value => {
-  if (value > 0 && value <= 100) {
+  if (value > 0 && value <= 1000) {
     subtractButton.removeAttribute('disabled');
     addButton.removeAttribute('disabled');
-  } else if (value > 100) {
+  } else if (value > 1000) {
     addButton.setAttribute('disabled', true);
   } else if (value <= 0) {
     subtractButton.setAttribute('disabled', true);
